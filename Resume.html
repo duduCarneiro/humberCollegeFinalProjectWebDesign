@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Document</title>
+</head>
+<body>
+   <header>   
+      <h1>My Portfolio Website</h1>
+   </header>
+   <nav>
+      <ul>
+         <li id="homeicon"><a href="Homepage.html"> <img src="images/home.png" alt="" onmouseover="getBigger(this)" onmouseout="getNormal(this)"></a></li>
+         <li><a href="Bio.html" onmouseover="getBigger(this)" onmouseout="getNormal(this)">Bio</a></li>
+         <li id="current"><a href="Resume.html">Resume</a></li>
+         <li><a href="Showcase.html" onmouseover="getBigger(this)" onmouseout="getNormal(this)">Showcase</a></li> 
+         <li><a href="Contactme.html" onmouseover="getBigger(this)" onmouseout="getNormal(this)">Leave a message</a></li>
+      </ul>
+   </nav>
+
+   <main class="flexbox">
+      <div class="curriculum">
+         <h1>My Resume</h1>
+         <h2>Eduardo Carneiro</h2>
+         <p>Toronto, Canada</p><br>
+
+         <h3 class="dottedbar">Education</h3>
+         <ul>
+            <li><h3>Computer Programming, <a href="https://appliedtechnology.humber.ca/programs/computer-programming.html?_ga=2.224697114.1294200635.1617026321-613846041.1616584000" target="_blank">Humber College</a>   Sep 2022 - present.</h3></li>
+            <p>In addition to learning programming skills in a variety of languages, and building collaborative and teamwork soft skills, courses are designed to give students a solid foundation in theory and practice in web and software development, Oracle database design and programming, project management, technical writing, and all facets of information systems. Students also learn about the standards of planning, developing, testing, and deploying integrated software solutions.</p><br>
+            <li><h3>Full Stack Web Developer, Computer Programming, <a href="https://www.lewagon.com/" target="_blank">Le Wagon Bootcamp</a>   Jun 2021.</h3></li>
+            <p>Web Dev Bootcamp: 9-week full-time intensive coding Bootcamp learning HTML, CSS, Bootstrap, JavaScript ES6, SQL, git, GitHub, Heroku, and Ruby on Rails. Designed, implemented, and shipped to production of a clone of Airbnb and a Rails prototype. Attended Le Wagon Rio de Janeiro (Batch #609).</p>
+         </ul><br>
+
+         <h3 class="dottedbar">Courses</h3>
+         <ul>
+            <li>Python by Google, <a href="https://www.coursera.org/account/accomplishments/certificate/A7DF9RCS3PK3" target="_blank">Coursera</a>   Apr 2022.</li>
+            <li>Modern JavaScript, <a href="https://www.udemy.com/certificate/UC-8bd5d10b-f419-4064-95b6-ac5833540063/" target="_blank">Udemy</a>   Mar 2022.</li>
+            <li>Agile Development and Scrum (with Honours) by IBM, <a href="https://www.coursera.org/account/accomplishments/certificate/VPQW3AHZBCH7" target="_blank">Coursera</a>   Mar 2022.</li>
+         </ul><br>
+
+         <h3 class="dottedbar">Programming Languages and Technologies</h3>
+         <p>JavaScript, Python and Ruby on Rails | CSS, HTML, Git, SQL, VsCode, Trello, Bootstrap, PostgreSQL, Cloudinary.</p><br>
+
+         <h3 class="dottedbar">Languages</h3>
+         <p>English (proficient) | Portuguese (native)</p>
+      </div>
+   </main>
+
+   <footer>
+      <div class="media">
+         <div class="media-links">
+           <a href="https://github.com/duduCarneiro"><img src="images/github.png" alt="github"></a>
+           <a href="https://www.linkedin.com/in/eduardocarneiro82"><img src="images/linkedin.png" alt="linkedin"></a>
+           <a href="mailto:eduardocarneiro.ca@gmail.com"><img src="images/email.png" alt="email"></a>
+         </div>
+
+         <div class="media-about">
+            <p>This website was coded in HTML, CSS, and Javascript to Course Project CPAN134 Web Programming and Design by Eduardo Carneiro n01536084</p>
+
+         </div>
+      </div>
+   </footer>
+   <script src="script.js"></script>
+</body>
+</html>

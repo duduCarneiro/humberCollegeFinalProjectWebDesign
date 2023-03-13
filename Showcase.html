@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Document</title>
+</head>
+<body>
+   <header>   
+      <h1>My Portfolio Website</h1>
+   </header>
+   <nav>
+      <ul>
+         <li id="homeicon"><a href="Homepage.html"> <img src="images/home.png" alt="" onmouseover="getBigger(this)" onmouseout="getNormal(this)"></a></li>
+         <li><a href="Bio.html" onmouseover="getBigger(this)" onmouseout="getNormal(this)">Bio</a></li>
+         <li><a href="Resume.html" onmouseover="getBigger(this)" onmouseout="getNormal(this)">Resume</a></li>
+         <li id="current"><a href="Showcase.html">Showcase</a></li> 
+         <li><a href="Contactme.html" onmouseover="getBigger(this)" onmouseout="getNormal(this)">Leave a message</a></li>
+      </ul>
+   </nav>
+
+   <main class="flexboxcases">
+      <h1>My Latest Projects</h1>
+      <div class="projects">
+         <div onmouseover="showCard(this)" class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/6screen.jpeg)">
+            <a href="Projects/GuessMyNumber.html">Guess My Number, app 2022 </a>
+            <p onmouseover="showText(this)" onmouseout="unshowText(this)" >It has a retro design inspired by the old 80s games. Coded with pure JavaScript, no frameworks. 
+            </p>
+         </div>
+         
+         <div onmouseover="showCard(this)" class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url(images/1screen.jpeg)">
+            <a href="Projects/Bankist.html">The Bankist, app 2022</a>
+            <p onmouseover="showText(this)" onmouseout="unshowText(this)" >The Bankist stands for minimalist banking and so this is why it was built an online bank interface with minimal design. Coded with pure JavaScript., no frameworks. 
+            </p>
+         </div>
+         <div onmouseover="showCard(this)" class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url(images/10screen.jpeg)">
+            <a href="Projects/RentACar.html">Rent a Car, app 2021</a>
+            <p onmouseover="showText(this)" onmouseout="unshowText(this)" >It was made from scratch to build an MVP of Airbnb.A web app where the users can easily get a car for just an hour or for a few days. 
+            </p>
+         </div>
+         <div onmouseover="showCard(this)" class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url(images/15screen.jpeg)">
+            <a href="Projects/Souvenir.html">Souvenir, app 2021</a>
+            <p onmouseover="showText(this)" onmouseout="unshowText(this)" >A mobile-first app. Designed, implemented, and shipped to production, coded in Ruby on Rails. Our web app is a simple way to organize and remember experiences in life.</p>
+         </div>
+         <div onmouseover="showCard(this)" class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/7screen.jpeg)">
+            <a href="Projects/PigGame.html">Pig Game, app 2022</a>
+            <p onmouseover="showText(this)" onmouseout="unshowText(this)" >An online game to guess until when you can trust your luck rolling dice. Coded with pure JavaScript, no frameworks.</p>
+         </div>
+
+      </div>
+   </main>
+
+   <footer>
+      <div class="media">
+         <div class="media-links">
+           <a href="https://github.com/duduCarneiro"><img src="images/github.png" alt="github"></a>
+           <a href="https://www.linkedin.com/in/eduardocarneiro82"><img src="images/linkedin.png" alt="linkedin"></a>
+           <a href="mailto:eduardocarneiro.ca@gmail.com"><img src="images/email.png" alt="email"></a>
+         </div>
+
+         <div class="media-about">
+            <p>This website was coded in HTML, CSS, and Javascript to Course Project CPAN134 Web Programming and Design by Eduardo Carneiro n01536084</p>
+
+         </div>
+      </div>
+   </footer>
+   <script src="script.js"></script>
+</body>
+</html>
+
+<!-- fazer realce das caixas com js -->

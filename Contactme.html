@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Document</title>
+</head>
+<body>
+   <header>   
+      <h1>My Portfolio Website</h1>
+   </header>
+   <nav>
+      <ul>
+         <li id="homeicon"><a href="Homepage.html"> <img src="images/home.png" alt="" onmouseover="getBigger(this)" onmouseout="getNormal(this)"></a></li>
+         <li><a href="Bio.html" onmouseover="getBigger(this)" onmouseout="getNormal(this)">Bio</a></li>
+         <li><a href="Resume.html" onmouseover="getBigger(this)" onmouseout="getNormal(this)">Resume</a></li>
+         <li><a href="Showcase.html" onmouseover="getBigger(this)" onmouseout="getNormal(this)">Showcase</a></li> 
+         <li  id="current"><a href="Contactme.html">Leave a message</a></li>
+      </ul>
+   </nav>
+   <main class="flexbox">
+      <div class="centerpage" id="centerpgform">
+         <h2>Share your thoughts</h2><br>
+         
+         <!-- <form onsubmit="displayEntries()"> -->
+         <form name="myform" id="myform">
+            <div>
+               <label for="fname">Name:</label>
+               <input maxlength="30" size="30" tabindex="1" accesskey="n" placeholder="your name" type="text" id="fname" name="fname" required>
+               <label for="email">e-mail:</label>
+               <input maxlength="30" size="30" tabindex="2" accesskey="m" type="email" id="email" name="email" placeholder="provide the email address" required><br>
+            </div>
+
+            <div>
+               <label for="date">Date:</label>
+               <input type="date" id="date" name="date"><br><br>
+
+               <label for="color">You are </label>
+               <input type="text" name="ocupation" id="ocupation" list="ocupations">
+                  <datalist id="ocupations">
+                     <option value="Headhunter"    label="Headhunter">
+                     <option value="Developer"  label="Developer">
+                     <option value="Employer"   label="Employer">
+                     <option value="Student" label="Student">
+                     <option value="Other"  label="Other">
+                  </datalist><br><br>
+
+               
+               <input type="checkbox" name="subscribe1" id="subscribe1" value="" checked>
+               <label for="subscribe1" id="newsletter">Subscribe to our newsletter</label><br>
+               <input onclick="acceptBlank()" type="checkbox" name="unknown" id="unknown" value="">
+               <label for="unknown" id="notidentified">I do not want to identify myself</label><br><br>
+            </div>
+
+
+            <label for="fname">Comments:</label>
+            <!-- <input type="text"><br><br> -->
+            <textarea id="message" name="message" rows="4" cols="30" size="40" placeholder="Leave a message"></textarea>
+      
+            <input style="height: 30px;" type="submit" value="Submit" id="mySubmit">
+         </form>
+          <!-- <button id="opinionForm">butao</button> -->
+         <div class="reviews">
+            <div class="reviewsRow">
+              <div class="reviewsName">John Little</div>
+              <div class="reviewsEmail">johnlt@gmail.com</div>
+              <div class="reviewsDate">2022-11-13</div>
+              <div class="reviewsComment">I think this website should have more illustrations</div>
+            </div>
+
+            <div class="reviewsRow">
+               <div class="reviewsName">Albert Strong</div>
+               <div class="reviewsEmail">Alb1975_S@outlook.com</div>
+               <div class="reviewsDate">2019-08-02</div>
+               <div class="reviewsComment">Good job. Keep sharing this kind of content</div>
+             </div>
+            </div>
+
+         </div>
+
+      </div>
+   </main>
+   <footer>
+      <div class="media">
+         <div class="media-links">
+           <a href="https://github.com/duduCarneiro"><img src="images/github.png" alt="github"></a>
+           <a href="https://www.linkedin.com/in/eduardocarneiro82"><img src="images/linkedin.png" alt="linkedin"></a>
+           <a href="mailto:eduardocarneiro.ca@gmail.com"><img src="images/email.png" alt="email"></a>
+         </div>
+
+         <div class="media-about">
+            <p>This website was coded in HTML, CSS, and Javascript to Course Project CPAN134 Web Programming and Design by Eduardo Carneiro n01536084</p>
+
+         </div>
+      </div>
+   </footer>
+   
+   <script src="script.js"></script>
+
+</body>
+</html>
+<!-- talvez selecionar: sugestion, comment... (positive, negative) -->
+<!-- talvez check box anonimous comment -->
+<!-- colocar mensagens no final da pagina com js -->

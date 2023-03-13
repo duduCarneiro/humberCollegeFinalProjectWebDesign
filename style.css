@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+
+}
+
+html {
+   height: 100%;
+}
+
+body {
+   margin: 0 auto;
+   padding: 10px;
+   background-image: url('images/paperboardtexture6.png');
+   height: 100%;
+   font-family: 'Special Elite', Monospace, serif;
+   font-size: 16px;
+   /* min-height:100vh;  */
+   /* display:flex;  */
+   /* flex-direction:column;  */
+   /* justify-content:space-between; */
+}
+
+/* .blackpaper {
+   background-image: url('images/blackpaper.jpeg');
+} */
+
+header {
+   padding: 10px;
+}
+
+nav {
+   padding: 20px;
+   border-radius: 4px;
+   box-shadow: 0 5px 10px rgba(28, 26, 26, 0.1);
+
+}
+
+ul {
+   list-style-type: none;
+}
+
+nav li {
+   display: inline;
+   padding: 10px;
+}
+
+#homeicon {
+   padding: 5px;
+   position: relative;
+   top: 2px;
+}
+
+nav a {
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   font-size: larger;
+}
+
+
+nav img {
+   height: 20px;
+}
+
+#current {
+   opacity: 0.15;
+   font-size: 25px;
+   height: 30px;
+}
+
+.flexboxcases {
+   display: flex;
+   flex-direction: column;
+}
+
+.flexbox {
+   display: flex;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+}
+
+main {
+   padding: 10px;
+   min-height: 75vh;
+}
+
+
+/* div {
+   padding: 50px 200px;
+   font-size: 30px;
+} */
+.centerpage {
+   padding: 50px;
+   font-size: 30px;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+   justify-items: center;
+   flex-direction: unset;
+}
+
+#centerpgform {
+   padding: 50px;
+   font-size: 25px;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+   justify-items: center;
+   flex-direction: unset;
+}
+/* .centerpage h1 {
+   padding: 100px;
+} */
+#profilepic {
+   width: 285px;
+   height: 285px;
+   border-radius: 50%;
+   float: left;
+   padding: 25px;
+}
+
+.curriculum {
+   padding: 50px;
+   font-size: 30px;
+   width: 90%;
+}
+.curriculum h1 {
+   border-bottom: 4px solid rgb(0, 0, 0);
+   padding: 10px;
+}
+
+.projectname {
+   text-align: center;
+}
+
+.curriculum h2, h3 {
+   padding: 10px;
+}
+
+.dottedbar, #getstarted, #usage, #built, #features, #credits {
+   border-bottom: 2px dotted rgb(0, 0, 0);
+}
+
+.curriculum a {
+   /* text-decoration: none; */
+   color: black;
+}
+
+.curriculum p {
+   font-size: 18px;
+   padding: 10px;
+   line-height: 150%;
+
+}
+
+blockquote {
+   font-size: 18px;
+   padding:0 10px;
+   margin-left: 10px;
+   margin-bottom: 20px;
+   border-left: 4px solid rgb(145, 143, 143);
+}
+
+.curriculum ul {
+   margin: 10px;
+}
+
+.curriculum li {
+   font-size: 18px;
+   padding: 5px;
+}
+.media {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 100px;
+   padding: 0px;
+   color: rgba(0,0,0,0.3);
+}
+.media-links {
+   display: flex;
+   padding: 50px;
+}
+.media-links a {
+   color: black;
+   opacity: 0.15;
+   text-decoration: none;
+   padding: 10px 20px;
+}
+
+.media-links a:hover {
+   opacity: 1;
+}
+
+.media-links a img {
+   height: 40px;
+}
+
+.media-about {
+   font-size: 15px;
+   padding: 50px 5px;
+   text-align: right;
+}
+
+.projects {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 10px;
+   flex-grow: 1;
+}
+
+
+.card-category {
+   background-size: cover;
+   background-position: center;
+   /* height: 180px; */
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   /* color: white; */
+   /* font-size: 24px; */
+   font-weight: bold;
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+   border-radius: 5px;
+   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+   filter: blur(5px);
+}
+
+.card-category a {
+   text-align: center;
+   text-decoration: none;
+   color: white;
+   font-size: 30px;
+}
+
+.card-category p {
+   color: white;
+   /* align-items: center;
+   align-content: center;
+   justify-content: center;
+   justify-items: center; */
+   text-align: center;
+   /* font-size: 15px; */
+   line-height: 150%;
+   opacity: 0;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+.reviewsRow {
+   border: 2px;
+   border-style: double;
+   padding: 5px;
+   margin: 5px 0;
+   font-size: 10px;
+   border-color: rgb(189, 184, 184);
+   max-width: 700px;
+}
+
+.reviewsName, .reviewsComment {
+   font-size: 14px;
+}
+
+.reviewsComment {
+   margin-top: 5px;
+}
+
+#newsletter, #notidentified {
+   font-size:15px;
+}
+
+
+/* 
+#formthoughts {
+   padding: 15px;
+   margin: 15px;
+} */
+
+footer {
+   /* padding: 5px; */
+   /* position: fixed; */
+}
